@@ -74,11 +74,11 @@ while True:  # Loop principal para permitir que o usuário reinicie ou saia do p
 
     # Perguntar ao usuário se deseja sair ou reiniciar
     while True:
-        sair = input("\nDeseja sair do programa? Digite 's' para sair ou 'n' para reiniciar: ").lower()
-        if sair == 's':
+        sair = input("\nDeseja sair do programa? Digite 'S' para sair ou 'N' para reiniciar: ").upper()
+        if sair == 'S':
             print("Encerrando o programa.")
             exit()  # Sai do programa
-        elif sair == 'n':
+        elif sair == 'N':
             print("Reiniciando o programa.\n")
             break  # Volta ao início do loop principal para reiniciar o processo
         else:
